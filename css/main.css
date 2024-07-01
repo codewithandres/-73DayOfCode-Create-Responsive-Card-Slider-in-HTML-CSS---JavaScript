@@ -18,7 +18,7 @@ body {
 }
 
 .card-list .card-item {
-    width: 400px;
+    user-select: none;
     padding: 35px;
     border-radius: 8px;
     display: flex;
@@ -62,5 +62,37 @@ body {
         background-color: hsla(0, 0%, 100%, 0.1);
         border: 1px solid hsla(0, 0%, 100%, 0.205);
         color: hsl(0, 0%, 100%);
+    }
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+    background-color: hsl(0, 0%, 100%);
+    height: 15px;
+    width: 15px;
+}
+
+.slider-wrapper .swiper-slide-buttom {
+    color: hsl(0, 0%, 100%);
+    margin-top: -50px;
+    transition: 2s ease;
+
+    &:hover {
+        color: hsl(234, 100%, 64%);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .slider-wrapper {
+        margin: 0 10px 40px;
+    }
+
+    .slider-wrapper .swiper-slide-buttom {
+        display: none;
     }
 }
