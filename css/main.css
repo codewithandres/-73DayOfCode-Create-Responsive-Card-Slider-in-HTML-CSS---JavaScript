@@ -39,3 +39,28 @@ body {
     border: 3px solid hsl(0, 0%, 100%);
     padding: 4px;
 }
+
+.card-list .card-item .user-prefecion {
+    font-size: 1.15rem;
+    color: hsl(0, 0%, 89%);
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+
+.card-list .card-item .mesage-buttom {
+    font-size: 1.15rem;
+    padding: 10px 35px;
+    color: hsl(234, 86%, 8%);
+    font-weight: 500;
+    border: 1px solid transparent;
+    background-color: hsl(0, 0%, 100%);
+    transition: .2s ease;
+    cursor: pointer;
+    border-radius: .3em;
+
+    &:hover {
+        background-color: hsla(0, 0%, 100%, 0.1);
+        border: 1px solid hsla(0, 0%, 100%, 0.205);
+        color: hsl(0, 0%, 100%);
+    }
+}
